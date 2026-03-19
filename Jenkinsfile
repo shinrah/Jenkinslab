@@ -3,6 +3,7 @@ pipeline {
     
     parameters {
   choice choices: ['dev ', 'test', 'prod'], description: 'select the environment ', name: 'environment'
+  choice choices: ['main', 'shinrah'], description: 'select the branch', name: 'gitbranches'
 }
 
     stages {
