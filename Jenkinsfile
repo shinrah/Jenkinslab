@@ -24,6 +24,7 @@ pipeline {
          stage ('Build') {
             steps {
                 echo 'Building the java applicaiton'
+                sh 'ls -ltr'
                 sh 'mvn clean package'
             }
         }
