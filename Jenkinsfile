@@ -25,7 +25,9 @@ pipeline {
             steps {
                 echo 'Building the java applicaiton'
                 sh 'ls -ltr'
+                dir('JAVA-Application-') {
                 sh 'mvn clean package'
+                }
             }
         }
     }
