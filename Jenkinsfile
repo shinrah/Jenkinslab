@@ -20,6 +20,7 @@ pipeline {
                 sh 'git clone https://github.com/shinrah/JAVA-Application-.git'
             }
           }
+    }
                 
          stage ('Build') {
             steps {
