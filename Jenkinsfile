@@ -29,6 +29,15 @@ pipeline {
                 sh 'mvn clean package'
                 }
             }
+        stage ('Testing step'){
+            steps {
+                sh 'echo "my first pipeline"'
+                sh '''
+                    echo "welcome to first pipeline"
+                    ls -ltr
+                '''    
+            }
+        }
         }
     }
 }
