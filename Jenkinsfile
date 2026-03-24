@@ -42,5 +42,12 @@ pipeline {
             }
         }
 
+        stage('retry stage') {
+            steps {
+                retry(3) {
+                    sh 'i am not working'
+                }
+        }
+
     }
 }
