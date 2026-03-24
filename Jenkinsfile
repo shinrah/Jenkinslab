@@ -47,6 +47,9 @@ pipeline {
                 retry(3) {
                     sh 'echo "i am not working"'
                 }
+                timeout(time: 3, unit: 'SECONDS') {
+                    sh 'sleep 5'
+                }
         }
 
     }
